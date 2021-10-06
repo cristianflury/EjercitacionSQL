@@ -1,29 +1,21 @@
--- TABLE
-CREATE TABLE curso (
-   codigo inT NOT NULL,
-   nombre VARCHAR(45) NOT NULL,
-   descripción VARCHAR(100),
-   turno VARCHAR(45) NOT NULL, cupo INT, PROFESOR_id INT,
-   PRIMARY KEY (codigo)
+Select nombre, apellido, fecha_nacimiento
+FROM profesor
+ORDER by fecha_nacimiento;
 
-);
-CREATE TABLE demo (ID integer primary key, Name varchar(20), Hint text );
-CREATE TABLE profesor (
-  
-  id INT NOT NUll, 
-  nombre VARCHAR(45),
-  apellido VARCHar(45),
-  fecha_nacimiento Date,
-  salario FLOAT,
-  PRIMARY KEY (id)
-  
+SELECT * from profesor 
+where salario >= 65000;
 
+SELECT * from profesor 
+where fecha_nacimiento BETWEEN '1980-01-01'
+and '1989-12-31';
 
-);
- 
--- INDEX
- 
--- TRIGGER
- 
--- VIEW
+select * from profesor
+LIMIT 5;
+
+SELECT * from profesor
+where apellido LIKE 'P%';
+
+SELECT * from profesor
+where fecha_nacimiento BETWEEN '1980-01-01'
+and '1989-12-31' and  salario > 80000;
  
