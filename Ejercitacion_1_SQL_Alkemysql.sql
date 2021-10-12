@@ -2,6 +2,7 @@ CREATE TABLE curso (
    codigo inT NOT NULL,
    nombre VARCHAR(45) NOT NULL,
    descripción VARCHAR(100),
+   cupo INT
    turno VARCHAR(45) NOT NULL,
    PRIMARY KEY (codigo)
 
