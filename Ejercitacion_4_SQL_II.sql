@@ -11,6 +11,6 @@ GROUP by p.id having count(*) > 1;
 --2
 select * 
 from estudiante e 
-where e.legajo not In 
+where e.legajo Not in
 (select i.estudiante_legajo from inscripcion i 
-where i.CURSO_codigo in (105));
+where i.CURSO_codigo = 105);
